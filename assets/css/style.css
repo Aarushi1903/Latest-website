@@ -1,0 +1,650 @@
+.intro {
+    height: 700px;
+}
+
+.background {
+    height: 700px;
+}
+
+.container-fluid .navbar-brand img {
+    max-width: 280px;
+
+}
+
+.bg-body-tertiary {
+    background-color: black;
+}
+
+.navbar-collapse {
+    padding: 0px 0 0px 94px;
+}
+
+.nav-item {
+    padding: 10px 40px 0 50px;
+}
+
+.nav-item2 {
+    padding: 17px 0 0 44px;
+}
+
+a {
+    color: #ffffff !important;
+}
+
+.btn-outline-success {
+    margin: 0 0 0 30px;
+    color: #ffffff !important;
+    border-color: #ffffff !important;
+}
+
+.me-2 {
+    margin: 0 0 0 80px;
+}
+
+.navbar-brand {
+    padding: 0 0 0 10px;
+}
+
+svg {
+    color: #ffffff;
+}
+
+.d-flex {
+    padding: 0 0 0 90px;
+}
+
+.dropdown-menu li a {
+    color: black !important;
+}
+
+.cart {
+    float: right;
+    padding: 0 0 0 5px;
+}
+
+.background {
+    position: relative;
+    place-items: center;
+    display: grid;
+    max-width: 100%;
+    margin-left: 0 !important;
+    background-color: black;
+  }
+
+  .background::before {
+    background-image: url(../images/top-view-table-full-delicious-food-assortment.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    content: '';
+    position: absolute;
+    inset: 0;
+    opacity: 35%;
+  }
+
+  
+.text{
+    float: left;
+}
+  .cart-text {
+    float: left;
+  }
+
+  .background img {
+    isolation: isolate;
+  }
+
+  /* Your existing CSS styles */
+
+/* Additional styles for the side three lines navbar */
+.navbar-toggler {
+    border: none;
+    background: transparent;
+    outline: none;
+  }
+  
+  .navbar-toggler-icon {
+    background-color: #fff;
+    height: 3px;
+    width: 25px;
+    display: block;
+    margin: 4px 0;
+  }
+  
+  /* Media Query for the side three lines navbar */
+  @media (max-width: 991px) {
+    .navbar-collapse {
+      position: absolute;
+      top: 70px;
+      left: -100%;
+      width: 100%;
+      background-color: black;
+      transition: left 0.3s;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    }
+    .dropdown-menu li a {
+        color: white !important;
+    }
+  .text{
+        float: none;
+      }
+      .cart{
+        float: none;
+      }
+    .navbar-collapse.show {
+      left: 0;
+    }
+  
+    .navbar-nav {
+      width: 100%;
+      text-align: center;
+      padding: 20px 0;
+    }
+    .btn.btn-danger {
+        font-size: 16px;
+        padding: 10px 30px;
+        border: none;
+        background-color: #dc3545;
+        color: #fff;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+      
+      .btn.btn-danger:hover {
+        background-color: #c82333;
+      }
+    .nav-item {
+      padding: 10px 0;
+    }
+    .nav-item2 {
+        padding: 10px 0;
+      }
+
+    .nav-item:last-child {
+      padding-bottom: 30px;
+    }
+  
+    .nav-link {
+      display: inline-block;
+      padding: 10px 20px;
+      color: #fff !important;
+      font-size: 16px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      text-decoration: none;
+    }
+  
+    .nav-link:hover {
+      background-color: rgba(255, 255, 255, 0.1);
+      border-radius: 5px;
+    }
+  
+    .dropdown-menu {
+      background-color: black !important;
+      text-align: center;
+      color: white !important;
+    }
+  
+    .dropdown-menu a {
+      color: #fff !important;
+      font-size: 16px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      padding: 10px 20px;
+      text-decoration: none;
+      display: block;
+    }
+  
+    .dropdown-menu a:hover {
+      background-color: rgba(255, 255, 255, 0.1);
+      border-radius: 5px;
+      color: white;
+    }
+  
+    .form-control {
+      margin-top: 10px;
+      margin-bottom: 20px;
+    }
+
+    .btn{
+        font-size: 80%;
+        margin: auto;
+        
+    }
+  }
+  
+
+.chef-img {
+    float: left;
+    height: 100%;
+}
+
+.background-text {
+    float: right;
+    color: #ffffff;
+    text-align: center;
+}
+
+.background-text h1 {
+    size: 10px;
+}
+
+.text{
+    text-align: center;
+}
+.text1 p {
+    font-size: 4rem;
+}
+
+.text2 {
+    margin: -30 0 0 0px;
+}
+
+.text2 p {
+    font-size: 2rem;
+}
+
+@media (max-width: 768px) {
+    .text1 p {
+        font-size: 3rem;
+    }
+    .text2 p {
+        font-size: 1.5rem;
+    }
+    .chef-img{
+        height: 30%;
+    }
+
+    
+  }
+
+  @media (max-width: 576px) {
+    .text1 p {
+        font-size: 3rem;
+    }
+    .text2 p {
+        font-size: 1.5rem;
+    }
+    .chef-img{
+        height: 50%;
+    }
+    }
+
+.text4 {
+    text-align: center;
+    padding-top: 60px;
+    color: red;
+}
+
+.text4 p {
+    font-size: 15px;
+}
+
+.text5 p {
+    font-size: 2rem;
+    text-align: center;
+    color: red;
+}
+
+.text5 p span {
+    color: rgb(255, 255, 255);
+
+}
+
+.pic {
+    float: left;
+}
+
+.pic img{
+    height: 100%;
+}
+
+.text6 {
+    text-align: left;
+    color: white;
+    float: right;
+    padding-top: 150px;
+    text-align: left;
+}
+
+.about-us {
+    background-color: rgb(0, 0, 0);
+}
+@media (max-width: 768px) {
+    .text5 p {
+        font-size: 1.9rem; 
+    }
+    
+    .pic img{
+        height: 80%;
+    }
+    
+  }
+
+  @media (max-width: 431px) {
+    .text5 p {
+        font-size: 1.7rem;
+    }
+
+    .pic img{
+        height: 65%;
+    }
+    
+  }
+
+.menu {
+    background-color: black;
+}
+
+.menu .text {
+    font-size: 15px;
+    text-align: center;
+    color: red;
+    padding-top: 25px;
+
+}
+
+.our-menu {
+    background-color: black;
+}
+
+.our-menu .text {
+    color: red;
+    text-align: center;
+    padding-top: 100px;
+}
+
+.our-menu .text2 {
+    text-align: center;
+}
+
+.grid-container {
+    display: grid;
+    gap: 50px 100px;
+    grid-template-columns: auto auto auto;
+    padding: 10px;
+}
+
+.grid-item {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    text-align: center;
+    border-radius: 50%;
+    width: 230px;
+    margin: auto;
+    height: 220px;  /* background-image: url(assets/images/eiliv-aceron-ZuIDLSz3XLg-unsplash.jpg); */
+    background-size: cover;
+}
+
+.box {
+    height: 470px;
+    background-color: #1f1f1f;
+    border-radius: 5%;
+    margin-top: 90px;
+    color: white;
+
+}
+
+.textbox {
+    padding-top: 30px;
+    text-align: center;
+}
+
+.textbox .name {
+    font-size: 20px;
+}
+
+.textbox .ingredients {
+    font-size: 11px;
+}
+
+.textbox .cost {
+    font-size: 25px;
+}
+
+.add-to-cart {
+    padding-top: 25px;
+}
+
+.our-team .text {
+    text-align: center;
+    color: red;
+    padding-top: 100px;
+}
+
+.our-team .text2 {
+    text-align: center;
+}
+
+.our-team {
+    background-color: black;
+}
+
+.card-body {
+    text-align: center;
+}
+
+.our-team .box {
+    border-radius: 0;
+    background-color: white;
+    color: black;
+
+}
+
+.popup {
+    width: 40rem;
+    background: #000000;
+    border-radius: 6px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.1);
+    text-align: center;
+    padding: 0 30px 30px;
+    color: #ffffff;
+    visibility: hidden;
+    transition: transform 0.4s, opacity 0.4s;
+    z-index: 9999; /* Ensure the popup appears on top of other elements */
+  }
+
+  
+  .open-popup {
+    visibility: visible !important;
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 1;
+  }
+  
+  .popup img {
+    width: 10rem;
+    margin-top: -50px;
+    border-radius: 50%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  }
+  
+  .popup h2 {
+    font-size: 3.8rem;
+    font-weight: 500;
+    margin: 30px 0 10px;
+  }
+  
+  .popup button {
+    width: 100%;
+    margin-top: 50px;
+    padding: 10px 0;
+    background: #6fd649;
+    color: white;
+    border: 0;
+    outline: none;
+    font-size: 1.8rem;
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+  }
+
+  
+  @media (max-width: 768px) {
+    .popup {
+      width: 80%;
+      font-size: 80%;
+      height: 70%;
+    }
+    .popup img {
+        
+        width: 40%;
+      }
+      .popup h2 {
+        font-size: 2.8rem;
+        font-weight: 500;
+        margin: 30px 0 10px;
+      }
+
+      .popup button {
+        width: 80%;
+        margin-top: 10px;
+        padding: 5px 0;
+        background: #6fd649;
+        color: white;
+        border: 0;
+        outline: none;
+        font-size: 1.5rem;
+        border-radius: 4px;
+        cursor: pointer;
+        box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+      }
+    
+  }
+
+  @media (max-width: 576px) {
+    .popup {
+      width: 90%;
+      font-size: 90%;
+       height: 60%;
+    }
+
+    .popup h2 {
+        font-size: 2rem;
+        font-weight: 500;
+        margin: 30px 0 10px;
+      }
+
+    .popup img {
+        width: 40%;
+      }
+
+      .popup button {
+        width: 90%;
+        margin-top: 10px;
+        padding: 10px 0;
+        background: #6fd649;
+        color: white;
+        border: 0;
+        outline: none;
+        font-size: 1rem;
+        border-radius: 4px;
+        cursor: pointer;
+        box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2);
+      }
+  }
+  
+
+.our-team{
+    background-color: black;
+}
+
+.card{
+    margin: auto;
+}
+
+
+.contact-us .text {
+    color: red;
+    text-align: center;
+    padding-top: 100px;
+  }
+
+  .contact-us .text2 {
+    text-align: center;
+  }
+
+  .contact-us{
+    color: white;
+  }
+
+.footer{
+    background-color: black;
+    height: auto;
+    width: 100%;
+    font-family:"Open Sans";
+    padding-top: 40px;
+    color: white;
+}
+
+.footer-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.footer-content h3{
+    font-size: 1.8rem;
+    font-weight: 400;
+    text-transform: capitalize;
+    line-height: 3rem;
+}
+
+.footer-content p{
+    max-width: 500px;
+    margin: 10px auto;
+    line-height: 28px;
+    font-size: 14px;
+}
+
+.socials{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0 3rem 0;
+
+}
+
+.socials li{
+    margin: 0 10px;
+
+}
+
+.socials a{
+    text-decoration: none;
+    color: white;
+}
+
+.socials a i{
+    font-size: 1.1rem;
+    transition: color .4s ease-out;
+}
+
+.socials a:hover i{
+    color: red;
+}
+
+.footer-bottom{
+    background-color: black;
+    width: 100%;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-bottom p {
+    font-size: 14px;
+    word-spacing: 2px;
+    text-transform: capitalize;
+}
+
+.footer-bottom span{
+    text-transform: uppercase;
+    opacity: 0.4;
+    font-weight: 200;
+    color: red;
+}
