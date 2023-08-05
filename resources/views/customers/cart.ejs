@@ -1,0 +1,91 @@
+<section class="filled-cart">
+    <div class="order container mx-auto">
+        
+        <div class="flex items-center">
+            <i class="fa fa-shopping-cart" style="color: white;"><span style="padding-left: 10px; color: red;">Shopping cart</span></i>
+        </div>
+
+        <hr style="color: grey;">
+        
+        <div class="food-list mx-auto items-center" style="padding-top: 20px;">
+            <% for(let food of Object.values(session.cart.items)) { %>
+            <div class="food-item row col-lg-12" style="text-align: center; margin: 10px 10px 10px 10px;">
+                <div class="col-lg-3 col-3">
+                  <img class="food-image" src="/images/<%=food.items.image%>">
+                </div>
+                <div class="food-info col-lg-9 col-9">
+                  <div class="col-lg-6 col-6 " >
+                    <h5><%= food.items.name %></h5>
+                  </div>  
+                  <div class="col-lg-1 col-1" >
+                    <span><%= food.qty %></span>
+                  </div>
+                  <div class="col-lg-5 col-5" >  
+                    <span>Rs. <%= food.items.price * food.qty %> </span>
+                  </div>
+                </div>
+                
+                
+            </div>
+            <% } %>
+
+        </div>
+        </div>
+<hr style="color: grey;">
+        <div class="total-amount">
+            <div>
+            <span style="color: white;">Total Amount: </span>
+            <span style="color: red; margin-left: 21px;">Rs. <%= session.cart.totalPrice %></span>
+            </div>
+
+            <div class="order-form" style="margin-top: 35px; align-items: center;">
+                <form class="row gy-2 gx-3 align-items-center">
+                    <div class="col-auto">
+                      <label class="visually-hidden" for="autoSizingInput">Name</label>
+                      <input type="text" class="form-control" id="autoSizingInput" placeholder="Name">
+                    </div>
+                    <div class="col-auto">
+                        <label class="visually-hidden" for="autoSizingInputGroup">Contact no.</label>
+                        <div class="input-group">
+                          <div class="input-group-text contact-icon"><i class="fa-solid fa-phone fa-fw" style="color: red;"></i></div>
+                          <input type="text" class="form-control" id="autoSizingInputGroup" placeholder="Contact no">
+                        </div>
+                      </div>
+                      
+                    <div class="col-auto">
+                      <label class="visually-hidden" for="autoSizingSelect">Preference</label>
+                      <select class="form-select" id="autoSizingSelect">
+                        <option selected>Table no.</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                      </select>
+                    </div>
+                    
+                    <div style="margin-top: 30px;">
+                      <button type="submit" class="btn btn-danger">Order now</button>
+                    </div>
+                  </form>
+            </div>
+        </div>
+    
+    </div>
+    <!-- <div class="empty-cart">
+     <div class="container text-center">
+        <div class="cart-empty">
+            <h1>Cart Empty <span class="emoji">&#128546;</span></h1>
+        </div>
+        <div class="message text-center" style="color: grey;">
+            <p style="margin: 0px !important;">It seems that you are hungry!</p>
+            <p style="margin: 0px !important;">Go check our Menu and add items to cart</p>
+        </div>
+        <div class="hungry-man">
+            <img src="/images/6597675.png" alt="">
+        </div>
+    </div>
+</div> -->
+</section>
+
+
+
+   

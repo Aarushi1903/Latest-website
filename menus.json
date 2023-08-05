@@ -1,0 +1,57 @@
+[
+    {
+        "id" : "1",
+        "name": "Garlic Bread",
+        "image" : "eiliv-aceron-ZuIDLSz3XLg-unsplash.jpg",
+        "price": "250"
+        
+    },{
+        "id" : "2",
+        "name": "Pasta",
+        "image" : "pasta.jpg",
+        "price": "300"
+        
+    },{
+        "id" : "3",
+        "name": "Pizza",
+        "image" : "pizza.jpg",
+        "price": "400"
+        
+    },{
+        "id" : "4",
+        "name": "Momos",
+        "image" : "momos.jpeg",
+        "price": "120"
+        
+    },{
+        "id" : "5",
+        "name": "Cold drink",
+        "image" : "cold-drink.jpeg",
+        "price": "80"
+        
+    },{
+        "id" : "6",
+        "name": "Cold Coffee",
+        "image" : "Cold-Coffee",
+        "price": "150"
+        
+    },{
+        "id" : "7",
+        "name": "Grilled Sandwich",
+        "image" : "garlic_bread.jpg",
+        "price": "250"
+    
+    },{
+        "id" : "8",
+        "name": "Mojito",
+        "image" : "mojito.jpeg",
+        "price": "149"
+        
+    },{
+        "id" : "9",
+        "name": "Chocolava",
+        "image" : "choco-lava.jpg",
+        "price": "99"
+        
+    }
+]
