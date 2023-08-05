@@ -12,7 +12,7 @@ const flash  = require('express-flash')
 
 async function connectToDatabase() {
   try {
-    await mongoose.connect("mongodb://0.0.0.0/smart-assissted-trolley", {
+    await mongoose.connect(process.env.MONGO_CONNECT_URL, {
       useNewUrlParser: true,
       useUnifiedTopology: true,
     });
@@ -21,6 +21,7 @@ async function connectToDatabase() {
     console.error("Error connecting to database:", err.message);
   }
 }
+app.use(flash());
 app.use(session({
     secret: process.env.COOKIE_SECRET,
     resave: false,
@@ -34,7 +35,7 @@ app.use((req, res, next) => {
     next()
 })
 connectToDatabase();
-
+app.use(express.urlencoded({ extended: false }));
 
 
 //set Template engine
@@ -50,3 +51,6 @@ app.listen(PORT, ()=>{
 app.use(express.static('assets'))
 module.exports = app;
 require('./routes/web')(app)
+app.use((req,res)=>{
+  res.status(404).send('<p>404! Page Not Found</p>')
+})

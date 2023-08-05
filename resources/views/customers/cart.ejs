@@ -1,4 +1,5 @@
 <section class="filled-cart">
+  <%if(session.cart) {%>
     <div class="order container mx-auto">
         
         <div class="flex items-center">
@@ -39,22 +40,21 @@
             </div>
 
             <div class="order-form" style="margin-top: 35px; align-items: center;">
-                <form class="row gy-2 gx-3 align-items-center">
+                <form class="row gy-2 gx-3 align-items-center" action="/orders" method="POST">
                     <div class="col-auto">
-                      <label class="visually-hidden" for="autoSizingInput">Name</label>
-                      <input type="text" class="form-control" id="autoSizingInput" placeholder="Name">
+                      <input name="Name" type="text" class="form-control" id="autoSizingInput" placeholder="Name">
                     </div>
                     <div class="col-auto">
-                        <label class="visually-hidden" for="autoSizingInputGroup">Contact no.</label>
+                        
                         <div class="input-group">
                           <div class="input-group-text contact-icon"><i class="fa-solid fa-phone fa-fw" style="color: red;"></i></div>
-                          <input type="text" class="form-control" id="autoSizingInputGroup" placeholder="Contact no">
+                          <input name="Contactno" type="text" class="form-control" id="autoSizingInputGroup" placeholder="Contact no">
                         </div>
                       </div>
                       
                     <div class="col-auto">
-                      <label class="visually-hidden" for="autoSizingSelect">Preference</label>
-                      <select class="form-select" id="autoSizingSelect">
+                      
+                      <select class="form-select" id="autoSizingSelect" name="Tableno">
                         <option selected>Table no.</option>
                         <option value="1">One</option>
                         <option value="2">Two</option>
@@ -68,14 +68,15 @@
                   </form>
             </div>
         </div>
-    
+   
     </div>
-    <!-- <div class="empty-cart">
+    <% } else {%>
+    <div class="empty-cart" style="background-color: black;">
      <div class="container text-center">
         <div class="cart-empty">
-            <h1>Cart Empty <span class="emoji">&#128546;</span></h1>
+            <h1 style="color:red;">Cart Empty <span class="emoji">&#128546;</span></h1>
         </div>
-        <div class="message text-center" style="color: grey;">
+        <div class="message text-center" style="color: white;">
             <p style="margin: 0px !important;">It seems that you are hungry!</p>
             <p style="margin: 0px !important;">Go check our Menu and add items to cart</p>
         </div>
@@ -83,7 +84,8 @@
             <img src="/images/6597675.png" alt="">
         </div>
     </div>
-</div> -->
+</div>
+<% } %>
 </section>
 
 
